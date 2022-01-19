@@ -17,6 +17,7 @@ class CreatePersonaTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('mail')->unique();
+            $table->float('sueldo', 8, 2);
             $table->timestamps();
         });
     }

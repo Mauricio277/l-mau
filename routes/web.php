@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('export', 'PersonaController@export')->name('export');
+Route::get('importExportView', 'PersonaController@importExportView');
+Route::post('import', 'PersonaController@import')->name('import');
